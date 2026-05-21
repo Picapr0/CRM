@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ServioCRM — разработка специализированной CRM для сетей автосервисов: записи, заказ-наряды, склад, аналитика." />
+  <title>ServioCRM — CRM для автосервисов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__mark">S</span>
+        <span class="logo__text">Servio<span>CRM</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#services">Услуги</a>
+        <a href="#modules">Модули</a>
+        <a href="#cases">Кейсы</a>
+        <a href="#company">Компания</a>
+      </nav>
+      <a href="tel:+74951234567" class="header__phone">+7 (495) 123-45-67</a>
+      <button type="button" class="btn btn--primary btn--sm header__cta" data-scroll="#contact">Обсудить задачу</button>
+      <button type="button" class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="badge">Специализация — автосервисы</div>
+          <h1 class="hero__title">Ускоряем рост сети, делая сервис&nbsp;системнее</h1>
+          <p class="hero__subtitle">Снижаем потери в записи и ремонте, убираем рутину мастеров и приёмщиков, повышаем выручку с&nbsp;повторных визитов</p>
+          <ul class="hero__tags">
+            <li>Запись и загрузка постов</li>
+            <li>Заказ-наряды и склад</li>
+            <li>Аналитика по филиалам</li>
+          </ul>
+        </div>
+        <form class="hero-form" id="hero-form" novalidate>
+          <p class="hero-form__lead">Обсудим ваши задачи и расскажем, как соберём CRM под вашу сеть</p>
+          <p class="hero-form__hint">Оставьте заявку — свяжемся в течение рабочего дня</p>
+          <label class="field">
+            <span>Имя</span>
+            <input type="text" name="name" placeholder="Как к вам обращаться" required autocomplete="name" />
+          </label>
+          <label class="field">
+            <span>Телефон</span>
+            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel" />
+          </label>
+          <label class="field">
+            <span>Компания</span>
+            <input type="text" name="company" placeholder="Название сети или СТО" />
+          </label>
+          <button type="submit" class="btn btn--accent btn--full">Оставить заявку</button>
+          <label class="checkbox">
+            <input type="checkbox" name="consent" required />
+            <span>Отправляя форму, я соглашаюсь с <a href="#">политикой обработки персональных данных</a></span>
+          </label>
+          <div class="hero-form__messengers">
+            <span>Или напишите:</span>
+            <a href="#" class="messenger-link">Telegram</a>
+            <a href="#" class="messenger-link">WhatsApp</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="container">
+        <p class="clients__label">Работаем с сетями и одиночными СТО:</p>
+        <div class="clients__logos">
+          <span>Шиномонтаж</span>
+          <span>Кузовной ремонт</span>
+          <span>ТО и диагностика</span>
+          <span>Детейлинг</span>
+          <span>Эвакуация</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title">Возьмём на себя цифровизацию сервиса, чтобы вы&nbsp;фокусировались на&nbsp;развитии сети</h2>
+        <div class="benefits-grid">
+          <article class="benefit-card reveal">
+            <div class="benefit-card__icon">📋</div>
+            <h3>Запись и загрузка постов</h3>
+            <p>Онлайн-запись, слоты мастеров, напоминания клиентам — без двойных броней и простоя боксов.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <div class="benefit-card__icon">🔧</div>
+            <h3>Заказ-наряды под отрасль</h3>
+            <p>Нормо-часы, работы, запчасти, статусы ремонта — всё в одной карточке, а не в Excel и блокнотах.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <div class="benefit-card__icon">📊</div>
+            <h3>Прозрачная аналитика</h3>
+            <p>Выручка по постам, средний чек, загрузка, маржа запчастей — дашборды для собственника и РОПа.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <div class="benefit-card__icon">🤖</div>
+            <h3>ИИ для приёмки</h3>
+            <p>Подсказки по типовым работам, расшифровка звонков, авто-коммерческие предложения из истории авто.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container">
+        <h2 class="section__title">Безболезненный рост за счёт системного сервиса</h2>
+        <div class="pain-grid">
+          <article class="pain-card reveal">
+            <span class="pain-card__num">01</span>
+            <h3>Перестать терять записи и прибыль</h3>
+            <p>Звонки теряются, клиенты уходят к конкурентам. CRM фиксирует каждое обращение и ведёт до оплаты.</p>
+          </article>
+          <article class="pain-card reveal">
+            <span class="pain-card__num">02</span>
+            <h3>Сделать ремонт предсказуемым</h3>
+            <p>Стандарты приёмки и этапов — чтобы качество не зависело только от «звёздных» мастеров.</p>
+          </article>
+          <article class="pain-card reveal">
+            <span class="pain-card__num">03</span>
+            <h3>Видеть картину по всей сети</h3>
+            <p>Один экран для собственника: филиалы, очереди, долги, остатки склада и KPI приёмщиков.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section__title">Что входит в разработку ServioCRM</h2>
+        <p class="section__desc">От аналитики процессов до запуска в сети — без шаблонных «коробок», только под вашу модель сервиса</p>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <h3>Аналитика и проектирование</h3>
+            <p>Изучаем приёмку, склад, гарантию, мотивацию мастеров. Собираем ТЗ и дорожную карту внедрения.</p>
+            <a href="#contact" class="service-card__link" data-scroll="#contact">Подробнее →</a>
+          </article>
+          <article class="service-card reveal">
+            <h3>Разработка под ключ</h3>
+            <p>Веб и мобильные интерфейсы, интеграции с 1С, поставщиками, телефонией и мессенджерами.</p>
+            <a href="#contact" class="service-card__link" data-scroll="#contact">Подробнее →</a>
+          </article>
+          <article class="service-card reveal">
+            <h3>Внедрение и обучение</h3>
+            <p>Миграция из Excel и старых CRM, обучение приёмщиков и администраторов, пилот на одном филиале.</p>
+            <a href="#contact" class="service-card__link" data-scroll="#contact">Подробнее →</a>
+          </article>
+          <article class="service-card reveal">
+            <h3>Сопровождение 24/7</h3>
+            <p>Доработки, обновления, техподдержка. SLA для сетей с круглосуточной записью.</p>
+            <a href="#contact" class="service-card__link" data-scroll="#contact">Подробнее →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="modules">
+      <div class="container">
+        <h2 class="section__title">Модули отраслевой CRM</h2>
+        <p class="section__desc">Готовые блоки, которые настраиваем под ваши процессы — без лишнего функционала</p>
+        <div class="modules-grid">
+          <article class="module-card reveal">
+            <span class="module-card__tag">Запись</span>
+            <h3>Онлайн-расписание постов</h3>
+            <p>Слоты по типу работ, SMS и мессенджеры, интеграция с сайтом и агрегаторами.</p>
+          </article>
+          <article class="module-card reveal">
+            <span class="module-card__tag">Ремонт</span>
+            <h3>Заказ-наряд 2.0</h3>
+            <p>Работы, запчасти, фото, согласование с клиентом в один клик, печать актов.</p>
+          </article>
+          <article class="module-card reveal">
+            <span class="module-card__tag">Склад</span>
+            <h3>Запчасти и поставщики</h3>
+            <p>Остатки, заказы поставщикам, кроссы по VIN, резерв под наряд.</p>
+          </article>
+          <article class="module-card reveal">
+            <span class="module-card__tag">Клиенты</span>
+            <h3>База и повторные визиты</h3>
+            <p>История авто, ТО по пробегу, рассылки «пора на сервис», программы лояльности.</p>
+          </article>
+          <article class="module-card reveal">
+            <span class="module-card__tag">Филиалы</span>
+            <h3>Мульти-точка</h3>
+            <p>Единые стандарты, разные прайсы, сводная отчётность по сети.</p>
+          </article>
+          <article class="module-card reveal">
+            <span class="module-card__tag">ИИ</span>
+            <h3>Умная приёмка</h3>
+            <p>Подсказки работ по симптомам, контроль качества звонков, чат-бот записи.</p>
+          </article>
+        </div>
+        <div class="section__footer">
+          <a href="#contact" class="btn btn--outline" data-scroll="#contact">Все модули — на демо</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cases">
+      <div class="container">
+        <h2 class="section__title">Как мы меняем автосервисы</h2>
+        <p class="section__desc">Реальные сценарии внедрения отраслевой CRM</p>
+        <div class="cases-slider" id="cases-slider">
+          <div class="cases-track" id="cases-track">
+            <article class="case-card">
+              <span class="case-card__industry">Сеть · 8 филиалов</span>
+              <h3>Шиномонтаж + ТО в Москве и МО</h3>
+              <p class="case-card__result">Загрузка постов +34%, потери записей −41%</p>
+              <p>Раньше запись велаась в WhatsApp и Google-таблицах. Внедрили единое расписание и автонапоминания — простой боксов сократился, NPS вырос.</p>
+              <a href="#" class="case-card__link">Читать кейс</a>
+            </article>
+            <article class="case-card">
+              <span class="case-card__industry">Кузовной · 3 цеха</span>
+              <h3>Кузовной центр премиум-класса</h3>
+              <p class="case-card__result">Срок согласования с клиентом −2 дня</p>
+              <p>Фото этапов, статусы покраски и согласование допработ в личном кабинете клиента. Собственник видит маржу по каждому авто.</p>
+              <a href="#" class="case-card__link">Читать кейс</a>
+            </article>
+            <article class="case-card">
+              <span class="case-card__industry">B2B · корпоративный парк</span>
+              <h3>Обслуживание корпоративных автопарков</h3>
+              <p class="case-card__result">Оформление нарядов в 5 раз быстрее</p>
+              <p>Договоры, лимиты, акты для бухгалтерии — в одной системе. Интеграция с 1С и электронным документооборотом.</p>
+              <a href="#" class="case-card__link">Читать кейс</a>
+            </article>
+            <article class="case-card">
+              <span class="case-card__industry">Детейлинг · 12 мастеров</span>
+              <h3>Студия детейлинга и оклейки</h3>
+              <p class="case-card__result">Повторные визиты +28% за полгода</p>
+              <p>CRM напоминает о сезонных услугах, ведёт склад плёнок и химии, считает выработку мастеров.</p>
+              <a href="#" class="case-card__link">Читать кейс</a>
+            </article>
+          </div>
+          <div class="cases-controls">
+            <button type="button" class="cases-btn" id="cases-prev" aria-label="Назад">←</button>
+            <button type="button" class="cases-btn" id="cases-next" aria-label="Вперёд">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <span class="stat__value" data-count="120">0</span>
+          <span class="stat__label">точек обслуживания на платформе</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__value" data-count="9">0</span>
+          <span class="stat__suffix">лет</span>
+          <span class="stat__label">на рынке отраслевых CRM</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__value" data-count="48">0</span>
+          <span class="stat__label">специалистов в команде</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__value" data-count="96">0</span>
+          <span class="stat__suffix">%</span>
+          <span class="stat__label">клиентов продлевают сопровождение</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="company">
+      <div class="container">
+        <h2 class="section__title">За что нас выбирают сети автосервисов</h2>
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <h3>Фокус на отрасли</h3>
+            <p>Не адаптируем «универсальную» CRM — проектируем под сервис, склад и гарантию с первого дня.</p>
+          </article>
+          <article class="why-card reveal">
+            <h3>Окупаемость 4–8 месяцев</h3>
+            <p>Меньше простоя постов, быстрее наряды, больше повторных визитов — считаем ROI до старта.</p>
+          </article>
+          <article class="why-card reveal">
+            <h3>Инициативность</h3>
+            <p>Предлагаем улучшения процессов, а не ждём идеальное ТЗ — погружаемся в вашу операционку.</p>
+          </article>
+          <article class="why-card reveal">
+            <h3>Собственный код</h3>
+            <p>Открытая архитектура, API, возможность доработок in-house или с нашей командой.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-block" id="contact">
+      <div class="container cta-block__inner reveal">
+        <div class="cta-block__text">
+          <h2>Обсудим CRM для вашей сети</h2>
+          <p>Бесплатный экспресс-аудит процессов — 45 минут с аналитиком. Покажем демо и план внедрения.</p>
+          <ul>
+            <li>Разбор записи, нарядов и склада</li>
+            <li>Оценка сроков и бюджета</li>
+            <li>Демо модулей под ваш кейс</li>
+          </ul>
+        </div>
+        <form class="cta-form" id="cta-form" novalidate>
+          <label class="field">
+            <span>Имя</span>
+            <input type="text" name="name" required placeholder="Ваше имя" />
+          </label>
+          <label class="field">
+            <span>Телефон</span>
+            <input type="tel" name="phone" required placeholder="+7 (___) ___-__-__" />
+          </label>
+          <label class="field">
+            <span>Количество точек</span>
+            <select name="points">
+              <option value="">Выберите</option>
+              <option value="1">1 филиал</option>
+              <option value="2-5">2–5 филиалов</option>
+              <option value="6+">6 и более</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn--accent btn--full">Записаться на аудит</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="logo">
+          <span class="logo__mark">S</span>
+          <span class="logo__text">Servio<span>CRM</span></span>
+        </a>
+        <p>Разработка специализированной CRM для сетей автосервисов и сервисных компаний.</p>
+        <a href="tel:+74951234567" class="footer__phone">+7 (495) 123-45-67</a>
+      </div>
+      <div class="footer__col">
+        <h4>Услуги</h4>
+        <a href="#services">Проектирование</a>
+        <a href="#services">Разработка</a>
+        <a href="#services">Внедрение</a>
+        <a href="#services">Сопровождение</a>
+      </div>
+      <div class="footer__col">
+        <h4>Модули</h4>
+        <a href="#modules">Запись</a>
+        <a href="#modules">Заказ-наряды</a>
+        <a href="#modules">Склад</a>
+        <a href="#modules">Аналитика</a>
+      </div>
+      <div class="footer__col">
+        <h4>Компания</h4>
+        <a href="#cases">Кейсы</a>
+        <a href="#company">О нас</a>
+        <a href="#contact">Контакты</a>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 ServioCRM. Все права защищены.</span>
+    </div>
+  </footer>
+
+  <div class="cookie" id="cookie">
+    <p>Мы используем cookie для удобства сайта. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="#">политикой</a>.</p>
+    <button type="button" class="btn btn--sm btn--accent" id="cookie-accept">Принять</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
